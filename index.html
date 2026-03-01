@@ -2,10 +2,79 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>나의 첫 깃허브 홈페이지</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Forest - 혁신을 심는 기업</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* 기본 스타일 */
+        body { font-family: 'Noto Sans KR', sans-serif; margin: 0; padding: 0; line-height: 1.6; color: #333; }
+        header { background: #fff; border-bottom: 1px solid #ddd; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; sticky; top: 0; z-index: 100; }
+        .logo { font-size: 1.5rem; font-weight: bold; color: #2d6a4f; text-decoration: none; }
+        nav a { margin-left: 20px; text-decoration: none; color: #555; font-weight: 500; }
+
+        /* 히어로 섹션 */
+        .hero { background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80'); 
+                background-size: cover; background-position: center; height: 60vh; display: flex; flex-direction: column; 
+                justify-content: center; align-items: center; color: #fff; text-align: center; padding: 0 20px; }
+        .hero h2 { font-size: 3rem; margin-bottom: 10px; }
+        .hero p { font-size: 1.2rem; margin-bottom: 20px; opacity: 0.9; }
+
+        /* 서비스 섹션 */
+        .section { padding: 80px 10%; text-align: center; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; margin-top: 40px; }
+        .card { padding: 30px; border: 1px solid #eee; border-radius: 10px; transition: 0.3s; }
+        .card:hover { transform: translateY(-10px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .card i { font-size: 40px; color: #2d6a4f; }
+
+        /* 푸터 */
+        footer { background: #333; color: #fff; padding: 40px 10%; text-align: center; }
+        .footer-info { font-size: 0.9rem; opacity: 0.7; margin-top: 20px; }
+    </style>
 </head>
 <body>
-    <h1>안녕하세요! 👋</h1>
-    <p>Git과 GitHub Pages를 이용해 만든 웹사이트입니다.</p>
+
+    <header>
+        <a href="#" class="logo">Career Forest</a>
+        <nav>
+            <a href="#about">회사소개</a>
+            <a href="#services">주요사업</a>
+            <a href="#contact">문의하기</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>미래를 향한 푸른 발걸음</h2>
+        <p>Career Forest는 지속 가능한 비즈니스 솔루션을 제공합니다.</p>
+    </section>
+
+    <section id="about" class="section">
+        <h3>About Us</h3>
+        <p>저희 회사는 고객의 성장을 최우선으로 생각하며,<br>최고의 전문가들이 모여 혁신적인 가치를 창출합니다.</p>
+    </section>
+
+    <section id="services" class="section" style="background-color: #f9f9f9;">
+        <h3>Our Services</h3>
+        <div class="grid">
+            <div class="card">
+                <h4>비즈니스 컨설팅</h4>
+                <p>전략적인 분석을 통해 기업의 나침반이 되어 드립니다.</p>
+            </div>
+            <div class="card">
+                <h4>IT 솔루션</h4>
+                <p>최신 기술력을 바탕으로 효율적인 시스템을 구축합니다.</p>
+            </div>
+            <div class="card">
+                <h4>교육 및 코칭</h4>
+                <p>인재의 잠재력을 깨우는 차별화된 프로그램을 제공합니다.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <h4>Contact Us</h4>
+        <p>이메일: info@careerforest.co.kr | 전화: 02-123-4567</p>
+        <p class="footer-info">© 2026 Career Forest. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>
